@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions
+ xmlns="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:xsdLocal1="http://www.siebel.com/xml/SwiPersonMatchInputIO"
+ targetNamespace="http://siebel.com/DataQuality"
+ xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsdLocal2="http://www.siebel.com/xml/SwiPersonMatchOutputIO"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:tns="http://siebel.com/DataQuality"
+><types
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ targetNamespace="http://siebel.com/DataQuality"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:import
+ namespace="http://www.siebel.com/xml/SwiPersonMatchOutputIO"
+></xsd:import
+><xsd:import
+ namespace="http://www.siebel.com/xml/SwiPersonMatchInputIO"
+></xsd:import
+><xsd:element
+ name="PersonMatch_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:SwiPersonMatchInputIO"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="PersonMatch_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal2:SwiPersonMatchOutputIO"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+></xsd:schema
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ xmlns:xsdLocal1="http://www.siebel.com/xml/SwiPersonMatchInputIO"
+ targetNamespace="http://www.siebel.com/xml/SwiPersonMatchInputIO"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:annotation
+><xsd:documentation
+>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD Generation</xsd:documentation
+></xsd:annotation
+><xsd:element
+ name="SwiPersonMatchInputIO"
+ type="xsdLocal1:SwiPersonMatchInputIO"
+></xsd:element
+><xsd:complexType
+ name="SwiPersonMatchInputIOTopElmt"
+><xsd:sequence
+><xsd:element
+ name="SwiPersonMatchInputIO"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsdLocal1:SwiPersonMatchInputIO"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="SwiPersonMatchInputIO"
+><xsd:sequence
+><xsd:element
+ name="Contact"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsdLocal1:Contact"
+></xsd:element
+></xsd:sequence
+><xsd:attribute
+ name="Threshold"
+ type="xsd:string"
+></xsd:attribute
+><xsd:attribute
+ name="MessageId"
+ type="xsd:string"
+></xsd:attribute
+><xsd:attribute
+ name="Locale"
+ type="xsd:string"
+></xsd:attribute
+><xsd:attribute
+ name="EnterpriseServerName"
+ type="xsd:string"
+></xsd:attribute
+><xsd:attribute
+ name="Language"
+ type="xsd:string"
+></xsd:attribute
+></xsd:complexType
+><xsd:complexType
+ name="Contact"
+><xsd:sequence
+><xsd:element
+ name="BirthDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="FirstName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LastName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MiddleName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalApartmentNumber"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalBuilding"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefCity"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalCountry"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefDistrict"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Number"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Series"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Email"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalNotFormAddrName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="FullPhone"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalHouse"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalHousing"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPostalCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalRegion"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefSettlement"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefState"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefStreet"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INN"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SearchType"
+ default="cust"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="DULIssueDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="DULType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:schema
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ targetNamespace="http://www.siebel.com/xml/SwiPersonMatchOutputIO"
+ xmlns:xsdLocal2="http://www.siebel.com/xml/SwiPersonMatchOutputIO"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:annotation
+><xsd:documentation
+>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD Generation</xsd:documentation
+></xsd:annotation
+><xsd:element
+ name="SwiPersonMatchOutputIO"
+ type="xsdLocal2:SwiPersonMatchOutputIO"
+></xsd:element
+><xsd:complexType
+ name="SwiPersonMatchOutputIOTopElmt"
+><xsd:sequence
+><xsd:element
+ name="SwiPersonMatchOutputIO"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsdLocal2:SwiPersonMatchOutputIO"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="SwiPersonMatchOutputIO"
+><xsd:sequence
+><xsd:element
+ name="Driver"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:Driver"
+></xsd:element
+></xsd:sequence
+><xsd:attribute
+ name="MessageId"
+ type="xsd:string"
+></xsd:attribute
+><xsd:attribute
+ name="EnterpriseServerName"
+ type="xsd:string"
+></xsd:attribute
+><xsd:attribute
+ name="Language"
+ type="xsd:string"
+></xsd:attribute
+><xsd:attribute
+ name="Locale"
+ type="xsd:string"
+></xsd:attribute
+></xsd:complexType
+><xsd:complexType
+ name="Driver"
+><xsd:sequence
+><xsd:element
+ name="Type"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="TypeCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="BirthDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="DULIssueDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="DULType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="FirstName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Series"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LastName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MiddleName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Number"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ListOfDriverPersonalAddress"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:ListOfDriverPersonalAddress"
+></xsd:element
+><xsd:element
+ name="ListOfCandidate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:ListOfCandidate"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfDriverPersonalAddress"
+><xsd:sequence
+><xsd:element
+ name="DriverPersonalAddress"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:DriverPersonalAddress"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="DriverPersonalAddress"
+><xsd:sequence
+><xsd:element
+ name="CountryCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="City"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Country"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PostalCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="State"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Street"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfCandidate"
+><xsd:sequence
+><xsd:element
+ name="Candidate"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:Candidate"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="Candidate"
+><xsd:sequence
+><xsd:element
+ name="MatchScore"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartyUId"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="BirthDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="UpdateDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="BirthPlace"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="FirstName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Citizenship"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LastName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MiddleName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Type"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MF"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INN"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LFMGenitive"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LFMDative"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LFMAblative"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="CreatedExternalSystem"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="MaritalStatus"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ListOfContact_INSPersonalAddress"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:ListOfContact_INSPersonalAddress"
+></xsd:element
+><xsd:element
+ name="ListOfContact_PUBContactIdentity"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:ListOfContact_PUBContactIdentity"
+></xsd:element
+><xsd:element
+ name="ListOfContact_AlternatePhone"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:ListOfContact_AlternatePhone"
+></xsd:element
+><xsd:element
+ name="ListOfCIFContactReference"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:ListOfCIFContactReference"
+></xsd:element
+><xsd:element
+ name="ListOfContact_Segment"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:ListOfContact_Segment"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfContact_INSPersonalAddress"
+><xsd:sequence
+><xsd:element
+ name="Contact_INSPersonalAddress"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:Contact_INSPersonalAddress"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="Contact_INSPersonalAddress"
+><xsd:sequence
+><xsd:element
+ name="TrustFlag"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="CountryCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalAddressType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalAddressValue"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalApartmentNumber"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefCity"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalCountry"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefDistrict"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalBuilding"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="UpdateDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LoginExternalSystem"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="NameExternalSystem"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefCityType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefDistrictType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalEndDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalNotFormAddrName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalHousing"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalKLADRCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalOKATOCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalAddressName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefStateType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalRegion"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefSettlement"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefSettlementType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefStreetType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefState"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalStartDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPrefStreet"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalHouse"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="INSPersonalPostalCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfContact_PUBContactIdentity"
+><xsd:sequence
+><xsd:element
+ name="Contact_PUBContactIdentity"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:Contact_PUBContactIdentity"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="Contact_PUBContactIdentity"
+><xsd:sequence
+><xsd:element
+ name="Type"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="TrustFlag"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EndDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="StartDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="UpdateDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ExpirationDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="IssueDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="NameExternalSystem"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LoginExternalSystem"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Comment"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="DivisionCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Issued"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="CountryIssue"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Number"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Series"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="TypeValue"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfContact_AlternatePhone"
+><xsd:sequence
+><xsd:element
+ name="Contact_AlternatePhone"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:Contact_AlternatePhone"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="Contact_AlternatePhone"
+><xsd:sequence
+><xsd:element
+ name="TrustFlag"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="NotFormFullPhone"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PhoneType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EndDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="StartDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="UpdateDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="NameExternalSystem"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LoginExternalSystem"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PhoneRegion"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OperatorName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PhoneValue"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="FullPhone"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfCIFContactReference"
+><xsd:sequence
+><xsd:element
+ name="CIFContactReference"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:CIFContactReference"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="CIFContactReference"
+><xsd:sequence
+><xsd:element
+ name="EndDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ExternalId"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SystemNumber"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfContact_Segment"
+><xsd:sequence
+><xsd:element
+ name="Contact_Segment"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:Contact_Segment"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="Contact_Segment"
+><xsd:sequence
+><xsd:element
+ name="StartDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EndDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Criterion"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LoginExternalSystem"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="UpdateDate"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Status"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Type"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="NameExternalSystem"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Value"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:schema
+></types
+><message
+ name="PersonMatch_Input"
+><part
+ name="PersonMatch_Input"
+ element="tns:PersonMatch_Input"
+></part
+></message
+><message
+ name="PersonMatch_Output"
+><part
+ name="PersonMatch_Output"
+ element="tns:PersonMatch_Output"
+></part
+></message
+><portType
+ name="Person_spcMatch"
+><operation
+ name="PersonMatch"
+><input
+ message="tns:PersonMatch_Input"
+></input
+><output
+ message="tns:PersonMatch_Output"
+></output
+></operation
+></portType
+><binding
+ name="Person_spcMatch"
+ type="tns:Person_spcMatch"
+><soap:binding
+ transport="http://schemas.xmlsoap.org/soap/http"
+ style="document"
+></soap:binding
+><operation
+ name="PersonMatch"
+><soap:operation
+ soapAction="document/http://siebel.com/DataQuality:PersonMatch"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+></binding
+><service
+ name="Person_spcMatch_spcWeb_spcService"
+><port
+ binding="tns:Person_spcMatch"
+ name="Person_spcMatch"
+><soap:address
+ location="localhost:7777/st"
+></soap:address
+></port
+></service
+></definitions
+>
