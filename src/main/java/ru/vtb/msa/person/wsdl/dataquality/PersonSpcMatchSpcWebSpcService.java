@@ -1,6 +1,8 @@
 
 package ru.vtb.msa.person.wsdl.dataquality;
 
+import org.springframework.beans.factory.annotation.Value;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import javax.xml.namespace.QName;
@@ -17,7 +19,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "Person_spcMatch_spcWeb_spcService", targetNamespace = "http://siebel.com/DataQuality", wsdlLocation = "file:/P:/Docs/WSDL/Person%20Match%20Web%20Service.wsdl")
+@WebServiceClient(name = "Person_spcMatch_spcWeb_spcService", targetNamespace = "http://siebel.com/DataQuality", wsdlLocation = "file:/P:/Docs/WSDL/PersonInput%20Match%20Web%20Service.wsdl")
 public class PersonSpcMatchSpcWebSpcService
     extends Service
 {
@@ -26,11 +28,14 @@ public class PersonSpcMatchSpcWebSpcService
     private final static WebServiceException PERSONSPCMATCHSPCWEBSPCSERVICE_EXCEPTION;
     private final static QName PERSONSPCMATCHSPCWEBSPCSERVICE_QNAME = new QName("http://siebel.com/DataQuality", "Person_spcMatch_spcWeb_spcService");
 
+    @Value("${wsdlpath}")
+    private static String wsdlpath;
+
     static {
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/P:/Docs/WSDL/Person%20Match%20Web%20Service.wsdl");
+            url = new URL(wsdlpath);
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

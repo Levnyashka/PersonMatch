@@ -1,6 +1,8 @@
 
 package ru.vtb.msa.person.wsdl.xml.swipersonmatchoutputio;
 
+import ru.vtb.msa.person.wsdl.xml.TypeCheckObject;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -60,7 +62,7 @@ import javax.xml.bind.annotation.XmlType;
     "series",
     "typeValue"
 })
-public class ContactPUBContactIdentity {
+public class ContactPUBContactIdentity implements TypeCheckObject {
 
     @XmlElement(name = "Type")
     protected String type;
