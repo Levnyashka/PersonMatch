@@ -1,6 +1,8 @@
 
 package ru.vtb.msa.person.wsdl.xml.swipersonmatchoutputio;
 
+import ru.vtb.msa.person.wsdl.xml.TypeCheckObject;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -52,7 +54,7 @@ import javax.xml.bind.annotation.XmlType;
     "phoneValue",
     "fullPhone"
 })
-public class ContactAlternatePhone {
+public class ContactAlternatePhone implements TypeCheckObject {
 
     @XmlElement(name = "TrustFlag")
     protected String trustFlag;
@@ -78,6 +80,12 @@ public class ContactAlternatePhone {
     protected String phoneValue;
     @XmlElement(name = "FullPhone")
     protected String fullPhone;
+
+
+    @Override
+    public String getType() {
+        return this.phoneType;
+    }
 
     /**
      * Gets the value of the trustFlag property.
